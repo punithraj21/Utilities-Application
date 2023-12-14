@@ -3,6 +3,7 @@ import firestore from "@react-native-firebase/firestore";
 import { GROUPS, MESSAGES, getCurrentTimestamp } from "./collections";
 import useLocalStorageData from "../hooks/useUserAuth";
 import { get } from "lodash";
+import sendNotifications from "./sendNotifications";
 
 export const listenToMessages: any = (threadId: any) => {
   try {
